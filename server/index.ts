@@ -1,11 +1,11 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import { handleDemo } from "./routes/demo.ts";
-import { handleMetaMaskAuth } from "./routes/authMetaMask.ts";
-import tradersRouter from "./routes/traders.ts";
-import reviewsRouter from "./routes/reviews.ts";
-import { initializeFirestore } from "./lib/firestore.ts";
+import { handleDemo } from "./routes/demo";
+import { handleMetaMaskAuth } from "./routes/authMetaMask";
+import tradersRouter from "./routes/traders";
+import reviewsRouter from "./routes/reviews";
+import { initializeFirestore } from "./lib/firestore";
 
 export function createServer() {
   const app = express();
