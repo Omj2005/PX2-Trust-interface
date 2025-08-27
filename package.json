@@ -11,11 +11,10 @@
     ]
   },
   "scripts": {
-    "dev": "vite",
     "build": "npm run build:client && npm run build:server",
     "build:client": "vite build",
-    "build:server": "echo 'Server build skipped'",
-    "start": "node server/node-build.js"
+    "build:server": "tsc -p tsconfig.server.json",
+    "start": "node dist/server/node-build.js"
   },
   "dependencies": {
     "@nomicfoundation/hardhat-ethers-chai-matchers": "^3.0.0",
